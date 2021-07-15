@@ -285,11 +285,16 @@ td
 
 .contentTitle
 {
+    color:bisque;
+    text-align: center;
     justify-content: center;
     align-items: center;
     margin: 0;
     padding: 0;
-    font-size: 2em;
+    font-size: 4vw;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .socials
@@ -390,4 +395,31 @@ td
 {
     flex-basis: 100%;
     width: 0;
+}
+
+.websiteTitle
+{
+    color:bisque;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: 4em;
+    width: 100%;
+    animation: websiteTitleAnimation 5s;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@keyframes websiteTitleAnimation 
+{
+    0%
+    {
+        width: 0%;
+    }
+    100%
+    {
+        width: 100%;
+    }
 }
