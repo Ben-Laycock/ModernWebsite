@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css"></link>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            $( document ).ready(function() {
+                $("body").scrollTop(0);
+                var numberOfSections = document.getElementsByClassName("section").length;
+
+                $(window).scroll(function() {
+                    var maxScrollTop = $("#container").height();
+                    var maxForAllSections = maxScrollTop*numberOfSections;
+                    $("body").css("height", maxForAllSections);
+
+                    var scroll = $("body").scrollTop();
+                    var maxHeight = $(document).height();
+                    var value = (scroll / maxHeight) * 100;
+
+                    $("#container").css("left", -value*numberOfSections + "%");
+                });
+            });
+        </script>
+
+        <div id="container">
+
+            <div class="section">
+                <div class="content">
+                    <div class="text">
+                        <h1>Red</h1>
+                        <p>
+                            Often found emerging from vents in the camera room.
+                        </p>
+                    </div>
+                    <img src="Images/AmongUsCharacterRed.png"></img>
+                    <div class="colorBlock" style="background-color: red;"></div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="content">
+                    <div class="text">
+                        <h1>TITLE</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                            culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                    <table>
+                        <tr>
+                            <td>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                                culpa qui officia deserunt mollit anim id est laborum.
+                            </td>
+
+                            <td>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                                culpa qui officia deserunt mollit anim id est laborum.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                                culpa qui officia deserunt mollit anim id est laborum.
+                            </td>
+                            
+                            <td>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
+                                culpa qui officia deserunt mollit anim id est laborum.
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="colorBlock" style="background-color: orange;"></div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
