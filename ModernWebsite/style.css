@@ -163,7 +163,7 @@ body::-webkit-scrollbar
 #container .section .content .text p
 {
     margin: 0;
-    padding: 0;
+    padding: 20px;
     font-size: 1.2em;
 }
 
