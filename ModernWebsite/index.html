@@ -2,27 +2,9 @@
     <head>
         <link rel="stylesheet" type="text/css" href="CSS/style.css"></link>
         <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="JAVASCRIPT/ScrollFunction.js"></script>
     </head>
     <body>
-        <script type="text/javascript">
-            $( document ).ready(function() {
-                $("body").scrollTop(0);
-                var numberOfSections = document.getElementsByClassName("section").length;
-
-                $(window).scroll(function() {
-                    var maxScrollTop = $("#container").height();
-                    var maxForAllSections = maxScrollTop*numberOfSections;
-                    $("body").css("height", maxForAllSections);
-
-                    var scroll = $("body").scrollTop();
-                    var maxHeight = $(document).height();
-                    var value = (scroll / maxHeight) * 100;
-
-                    $("#container").css("left", -value*numberOfSections + "%");
-                });
-            });
-        </script>
-
         <div id="container">
 
             <div class="section">
