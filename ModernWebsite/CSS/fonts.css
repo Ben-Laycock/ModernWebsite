@@ -2,3 +2,8 @@
     font-family: "Main-Font";
     src: url("..//FONTS/HAPPY-DONUTS.ttf");
 }
+
+@font-face {
+    font-family: "Cascadia-Code";
+    src: url("..//FONTS/CascadiaCode.ttf");
+}
