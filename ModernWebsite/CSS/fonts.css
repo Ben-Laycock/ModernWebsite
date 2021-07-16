@@ -7,3 +7,8 @@
     font-family: "Cascadia-Code";
     src: url("..//FONTS/CascadiaCode.ttf");
 }
+
+@font-face {
+    font-family: "Zector";
+    src: url("..//FONTS/Zector.ttf");
+}
